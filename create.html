@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Create Presale</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <nav>
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="create.html">Create Presale</a></li>
+            <li><a href="donate.html">Donate to Presale</a></li>
+            <li><a href="refund.html">Request Refund</a></li>
+        </ul>
+    </nav>
+    <div class="container">
+        <h1>Create Presale</h1>
+        <div class="form-container">
+            <form id="createPresaleForm">
+                <input type="text" id="tokenName" placeholder="Token Name" required>
+                <input type="text" id="aboutToken" placeholder="About Token" required>
+                <input type="text" id="tokenID" placeholder="Token ID" required>
+                <input type="text" id="tokenSymbol" placeholder="Token Symbol" required>
+                <input type="number" id="totalSupply" placeholder="Total Supply" required>
+                <input type="number" id="presaleAllocation" placeholder="Presale Allocation" required>
+                <input type="number" id="liquidityAllocation" placeholder="Liquidity Allocation" required>
+                <input type="number" id="presaleRate" placeholder="Presale Rate" required>
+                <input type="number" id="listingRate" placeholder="Listing Rate" required>
+                <input type="number" id="softcap" placeholder="Softcap" required>
+                <input type="number" id="hardcap" placeholder="Hardcap" required>
+                <input type="number" id="min" placeholder="Min Contribution" required>
+                <input type="number" id="max" placeholder="Max Contribution" required>
+                <input type="datetime-local" id="startTime" placeholder="Start Time" required>
+                <input type="datetime-local" id="deadline" placeholder="Deadline" required>
+                <input type="text" id="image" placeholder="Image URL" required>
+                <select id="feeOption" required>
+                    <option value="true">5% HBAR Fee</option>
+                    <option value="false">2% HBAR + 2% Tokens</option>
+                </select>
+                <input type="number" id="liquidityPercentage" placeholder="Liquidity Percentage" required>
+                <select id="isWhitelisted" required>
+                    <option value="true">Yes</option>
+                    <option value="false">No</option>
+                </select>
+                <input type="number" id="nftTokenId" placeholder="Whitelist NFT Token ID" required>
+                <select id="useSaucerSwap" required>
+                    <option value="true">Use SaucerSwap</option>
+                    <option value="false">Use SilkSwap</option>
+                </select>
+                <input type="number" id="whitelistDuration" placeholder="Whitelist Duration (hours)" required>
+                <select id="burnUnsoldTokens" required>
+                    <option value="true">Burn Unsold Tokens</option>
+                    <option value="false">Refund Unsold Tokens</option>
+                </select>
+                <button type="submit">Create Presale</button>
+            </form>
+        </div>
+    </div>
+    <script src="scripts.js"></script>
+</body>
+</html>
